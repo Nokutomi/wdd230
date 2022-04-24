@@ -1,0 +1,61 @@
+body {
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(51, 118, 170);
+  box-shadow: 1px 1px 20px 10px #bbb;
+}
+
+header {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  color: white;
+}
+
+header img {
+  width: 100px;
+  border-radius: 10px;
+  justify-content: left;
+  grid-column: 1 / 3;
+}
+
+header h1 {
+  grid-column: 3 / 12;
+  justify-self: center;
+}
+
+main {
+  margin: 10px;
+  padding: 0 10px 5px;
+}
+
+footer {
+  margin: 10px;
+  color: white;
+}
+
+main h2 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+}
+
+main ul {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 20px;
+}
+
+footer p {
+  text-align: center;
+}
+
+#last-updated {
+  color: yellow;
+}
