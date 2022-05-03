@@ -85,5 +85,6 @@ figure {
 figure img {
   border: 1px solid var(--border-color);
   max-width: 100%;
+  height: auto;
 }
 
