@@ -1,0 +1,26 @@
+@media only screen and (min-width: 560px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* main section:nth-child(3) {
+    grid-column: span 2;
+  } */
+
+  figure img {
+    margin: 0 auto;
+    display: block;
+  }
+  
+  nav {
+    padding: 0 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    margin-left: 2%;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+}
