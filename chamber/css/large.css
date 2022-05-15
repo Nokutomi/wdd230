@@ -1,0 +1,80 @@
+@media only screen and (min-width: 64rem) {
+  header,
+  footer,
+  main,
+  nav {
+    /* max-width: 65rem; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+  nav ul {
+    display: flex;
+    margin-left: 2%;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul#primaryNav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2vw;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  nav ul li a {
+    padding: 0.5rem 1rem;
+    border: none;
+    /* border-right: 1px solid rgba(0, 0, 0, 0.3); */
+  }
+
+  main {
+    margin: 1rem 0.5rem;
+    padding: 0 10px 5px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "title title title title"
+      "event hero hero spot1"
+      "weather hero hero spot2"
+      "join news news news";
+  }
+
+  main h1 {
+    grid-area: title;
+  }
+
+  .main-hero {
+    grid-area: hero;
+    height: 100%;
+  }
+
+  .main-news-release {
+    grid-area: news;
+  }
+  .main-spotlight1 {
+    grid-area: spot1;
+  }
+  .main-spotlight2 {
+    grid-area: spot2;
+  }
+  .main-join {
+    grid-area: join;
+  }
+  .main-event {
+    grid-area: event;
+  }
+  .main-weather {
+    grid-area: weather;
+  }
+
+  .footer-info {
+    display: none;
+  }
+}

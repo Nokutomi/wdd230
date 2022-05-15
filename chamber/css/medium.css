@@ -1,0 +1,83 @@
+@media only screen and (min-width: 35rem) {
+  figure img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  nav {
+    padding: 0 1rem;
+  }
+
+  main section {
+    margin-bottom: 0;
+  }
+
+  main {
+    margin: 1rem 0.5rem;
+    padding: 0 10px 5px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title title"
+      "hero hero"
+      "news news"
+      "spot1 spot2"
+      "join join"
+      "event weather";
+  }
+
+  main h1 {
+    grid-area: title;
+  }
+
+  .main-hero {
+    grid-area: hero;
+  }
+
+  .main-news-release {
+    grid-area: news;
+  }
+  .main-spotlight1 {
+    grid-area: spot1;
+  }
+  .main-spotlight2 {
+    grid-area: spot2;
+  }
+  .main-join {
+    grid-area: join;
+  }
+  .main-event {
+    grid-area: event;
+  }
+  .main-weather {
+    grid-area: weather;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 100px 1fr 250px;
+    align-items: center;
+    grid-template-areas: "logo address email" "logo address map" "info info info";
+  }
+
+  .footer-figure {
+    grid-area: logo;
+  }
+  .footer-address {
+    grid-area: address;
+  }
+  .footer-email {
+    grid-area: email;
+  }
+  .footer-map {
+    grid-area: map;
+  }
+  .footer-info {
+    grid-area: info;
+  }
+
+  .main-join {
+    display: block;
+  }
+}
