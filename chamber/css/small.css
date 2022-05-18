@@ -34,6 +34,10 @@ h6 {
 header {
   padding: 1rem 0 0;
   color: white;
+
+}
+
+.header-grid {
   display: grid;
   grid-template-columns: 100px 1fr;
 }
@@ -50,6 +54,7 @@ header h2 {
   padding: 1rem;
   grid-column: 1 / -1;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .header-title {
@@ -60,7 +65,6 @@ main {
   margin: 1rem 0.5rem;
   padding: 0 10px 5px;
 }
-
 
 main section {
   padding: 0;
@@ -132,17 +136,6 @@ figure img {
   text-align: center;
 } */
 
-nav ul li a:hover {
-  /* background-color: #aaa; */
-  /* background-color: var(--secondary-color);
-  color: white; */
-}
-nav ul li.active a {
-  /* background-color: rgb(51, 118, 170); */
-  /* background-color: var(--secondary-color);
-  color: #fff; */
-}
-
 .colors {
   width: 100%;
   min-width: 350px;
@@ -182,6 +175,7 @@ nav {
   background-color: #eee;
   grid-column: 1 / -1;
   width: 100%;
+  box-sizing: border-box;
 }
 
 nav ul {

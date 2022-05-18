@@ -59,22 +59,32 @@
     grid-template-columns: 100px 1fr 250px;
     align-items: center;
     grid-template-areas: "logo address email" "logo address map" "info info info";
+    padding: 1rem 1rem 5rem 0;
   }
 
   .footer-figure {
     grid-area: logo;
+    margin: 0.1rem;
   }
+
   .footer-address {
     grid-area: address;
+    text-align: left;
   }
+
   .footer-email {
     grid-area: email;
+    text-align: right;
   }
+
   .footer-map {
     grid-area: map;
+    text-align: right;
   }
+
   .footer-info {
     grid-area: info;
+    margin-top: 1rem;
   }
 
   .main-join {
