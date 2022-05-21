@@ -67,11 +67,25 @@
     grid-area: title;
   }
 
-  .main-hero {
-    grid-area: hero;
-    height: 100%;
+  #hero-overlay {
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 50%;
   }
 
+  .main-hero {
+    grid-area: hero;
+  }
+
+  .main-hero figure {
+    height: 100%;
+  }
+  .main-hero figure img {
+    object-fit: cover ;
+    height: 93%;
+
+  }
   .main-news-release {
     grid-area: news;
   }

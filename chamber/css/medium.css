@@ -2,6 +2,7 @@
   figure img {
     margin: 0 auto;
     display: block;
+    border-radius: 10px;
   }
 
   nav {
@@ -16,6 +17,7 @@
     margin: 1rem 0.5rem;
     padding: 0 10px 5px;
     display: grid;
+    align-items: stretch;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -29,6 +31,13 @@
 
   main h1 {
     grid-area: title;
+  }
+
+  #hero-overlay {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    width: 50%;
   }
 
   .main-hero {

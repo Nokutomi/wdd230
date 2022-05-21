@@ -34,7 +34,6 @@ h6 {
 header {
   padding: 1rem 0 0;
   color: white;
-
 }
 
 .header-grid {
@@ -57,6 +56,22 @@ header h2 {
   box-sizing: border-box;
 }
 
+#header-msg {
+  text-align: center;
+  padding: 1rem;
+  grid-column: 1 / -1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.showme {
+  display: block;
+}
+
+.hideme {
+  display: none;
+}
+
 .header-title {
   align-self: center;
 }
@@ -68,12 +83,20 @@ main {
 
 main section {
   padding: 0;
+  padding-bottom: 1rem;
   margin: 0;
   margin-bottom: 1rem;
   border: 1px solid var(--border-color);
   border-radius: 10px;
   background-color: #eee;
-  height: 200px;
+}
+main p {
+  padding: 0 1rem;
+}
+
+.main-hero img {
+  width: 100%;
+  height: auto;
 }
 
 .main-join {
@@ -82,6 +105,40 @@ main section {
 
 main h2 {
   padding-left: 1rem;
+}
+
+.main-hero {
+  position: relative;
+}
+
+#hero-overlay {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+  border: 1px solid var(--border-color);
+  /* background-color: var(--accent2-color); */
+  backdrop-filter: blur(3px);
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #333;
+  opacity: 0.9;
+}
+
+#hero-overlay-btn {
+  margin: 0 0.3rem 1rem 50%;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  color: white;
+  
+}
+
+#hero-overlay-btn:hover {
+  background-color: var(--primary-color);
+  color: black;
 }
 
 footer {
@@ -221,4 +278,13 @@ nav ul.open {
 }
 #hamburgerBtn.open span:nth-child(2) {
   display: block;
+}
+
+.main-spotlight1 div,
+.main-spotlight2 div {
+  margin: 0.5rem 1rem;
+  height: 5rem;
+  background-color: gray;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
 }

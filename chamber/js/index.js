@@ -51,3 +51,12 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
 // datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+
+const dayOfWeek = currentDate.getDay()
+const headerMsg = document.querySelector("#header-msg")
+if (dayOfWeek === 1 || dayOfWeek === 2) {
+  headerMsg.classList.add("showme")
+} else {
+  headerMsg.classList.add("hideme")
+}
