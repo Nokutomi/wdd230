@@ -18,6 +18,7 @@
       content="The Paulistano Chamber of Commerce online portal. Make businesess, contacts, and find services online."
     />
     <script src="./js/index.js" defer></script>
+    <script src="./js/windchill.js" defer></script>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/medium.css" />
@@ -28,7 +29,7 @@
       <div class="header-grid">
         <figure>
           <img
-            src="./images/logo.png"
+            src="./images/logo.webp"
             alt="Paulistano's logo"
             width="200"
             height="200"
@@ -60,6 +61,16 @@
         </ul>
       </nav>
     </header>
+    <img
+      srcset="
+        images/heroSrc-400w.webp  400w,
+        images/heroSrc-650w.webp  650w,
+        images/heroSrc-900w.webp  900w,
+        images/heroSRC.webp      1050w
+      "
+      src="images/heroSrc.webp"
+      alt="hero image"
+    />
     <main>
       <h1>Home</h1>
       <section class="main-hero">
@@ -67,6 +78,12 @@
           <img
             src="./images/hero.webp"
             alt="Sao Paulo Art Museum"
+            srcset="
+              images/hero-400w.webp  400w,
+              images/hero-650w.webp  650w,
+              images/hero-900w.webp  900w,
+              images/hero.webp      1050w
+            "
             width="1000"
             height="641"
           />
@@ -85,10 +102,10 @@
       </section>
       <section class="main-weather">
         <h2>Weather</h2>
-        <p>Temperature: xxº</p>
+        <p>Temperature: <span id="weather-temperature">40</span> ºF</p>
         <p>Condition: Partly Cloudy</p>
-        <p>Wind Speed: X mph</p>
-        <p>Wind Chill: Xº</p>
+        <p>Wind Speed: <span id="weather-wind-speed">5</span> mph</p>
+        <p>Wind Chill: <span id="weather-wind-chill">N/A</span> ºC</p>
       </section>
       <section class="main-news-release">
         <h2>News release</h2>
@@ -133,7 +150,7 @@
     <footer class="card">
       <figure class="footer-figure">
         <img
-          src="./images/logo.png"
+          src="./images/logo.webp"
           alt="Paulistano's logo"
           width="200"
           height="200"
