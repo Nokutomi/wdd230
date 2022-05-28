@@ -131,7 +131,6 @@ main h2 {
   padding: 0 1rem;
 }
 
-
 #hero-overlay-btn {
   margin: 0 0.3rem 1rem 50%;
   padding: 0.3rem 1rem;
@@ -139,7 +138,6 @@ main h2 {
   border: 1px solid var(--border-color);
   background-color: var(--secondary-color);
   color: white;
-  
 }
 
 #hero-overlay-btn:hover {
@@ -293,4 +291,11 @@ nav ul.open {
   background-color: gray;
   border: 1px solid var(--border-color);
   border-radius: 5px;
+}
+
+#responsive-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
