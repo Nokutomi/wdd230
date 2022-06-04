@@ -1,0 +1,24 @@
+body h1,
+body picture {
+  margin: 0 auto
+  
+}
+
+body {
+  margin: 0 auto;
+  width: 400px
+}
+
+picture {
+  display: block;
+  margin: 0 auto;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
