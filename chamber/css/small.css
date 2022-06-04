@@ -299,3 +299,25 @@ nav ul.open {
   width: 100%;
   height: auto;
 }
+
+#responsive-image-example {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.responsive-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.main-discover-images img {
+  max-width: 300px;
+}
+
+.main-discover-images figcaption {
+  text-align: center;
+  padding-top: 5px;
+}

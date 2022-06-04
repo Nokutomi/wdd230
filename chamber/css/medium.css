@@ -63,6 +63,18 @@
     grid-area: weather;
   }
 
+  .main-demographics {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  .main-discover-images {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+
+  .norm:hover {box-shadow: 0 0 50px #333;}
+
   footer {
     display: grid;
     grid-template-columns: 100px 1fr 250px;

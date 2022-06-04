@@ -15,12 +15,12 @@
     box-shadow: none;
   }
 
-  header figure{
-    padding-left:0
+  header figure {
+    padding-left: 0;
   }
 
   nav {
-    padding-left: calc(calc(100% - 65rem)/2);
+    padding-left: calc(calc(100% - 65rem) / 2);
   }
 
   nav ul li a {
@@ -82,9 +82,8 @@
     height: 100%;
   }
   .main-hero figure img {
-    object-fit: cover ;
+    object-fit: cover;
     height: 93%;
-
   }
   .main-news-release {
     grid-area: news;
@@ -103,6 +102,15 @@
   }
   .main-weather {
     grid-area: weather;
+  }
+  .main-demographics {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  .main-discover-images {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
   }
 
   .footer-info {
