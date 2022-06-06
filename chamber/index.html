@@ -61,7 +61,19 @@
         </ul>
       </nav>
     </header>
-    <img
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/heroSrc-400w.webp" />
+      <source media="(max-width: 650px)" srcset="images/heroSrc-650w.webp" />
+      <source media="(max-width: 900px)" srcset="images/heroSrc-900w.webp" />
+      <img
+        id="responsive-image-example"
+        alt="hero image"
+        src="images/heroSrc.webp"
+        width="300"
+        height="115"
+      />
+    </picture>
+    <!-- <img
       srcset="
         images/heroSrc-400w.webp  400w,
         images/heroSrc-650w.webp  650w,
@@ -74,9 +86,7 @@
       sizes="(max-width: 400px) 400w, ((min-width: 401px) and (max-width: 650px)) 650w, ((min-width: 651px) and (max-width: 900px)) 900w, 1050w"
       width="300"
       height="115"
-    />
-
-
+    /> -->
     <main>
       <h1>Home</h1>
       <section class="main-hero">
