@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="./js/lazyloading.js" defer></script>
+    <!-- <script src="./js/lazyloading.js" defer></script> -->
     <title>Lazy Loading</title>
-</head>
-<body>
-    <h1>
-        Lazy Loading Example
-    </h1>
+  </head>
+  <body>
+    <h1>Lazy Loading Example</h1>
     <picture>
-        <img src="images/placeholder300x400.png" data-src="https://placeimg.com/300/400/animals" alt="animals"/>
+      <img
+        src="images/placeholder300x400.png"
+        data-src="images/animal300x400.webp"
+        alt="animals"
+        loading="lazy"
+      />
     </picture>
     <picture>
-        <img src="images/placeholder300x400.png" data-src="https://placeimg.com/300/400/arch" alt="arch"/>
+      <img
+        src="images/placeholder300x400.png"
+        data-src="images/arch300x400.webp"
+        alt="arch"
+        loading="lazy"
+      />
     </picture>
     <picture>
-        <img src="images/placeholder300x400.png" data-src="https://placeimg.com/300/400/nature" alt="nature"/>
+      <img
+        src="images/placeholder300x400.png"
+        data-src="images/nature300x400.webp"
+        alt="nature"
+        loading="lazy"
+      />
     </picture>
     <picture>
-        <img src="images/placeholder300x400.png" data-src="https://placeimg.com/300/400/people" alt="people"/>
+      <img
+        src="images/placeholder300x400.png"
+        data-src="images/people300x400.webp"
+        alt="people"
+        loading="lazy"
+      />
     </picture>
     <picture>
-        <img src="images/placeholder300x400.png" data-src="https://placeimg.com/300/400/tech" alt="tech"/>
+      <img
+        src="images/placeholder300x400.png"
+        data-src="images/tech300x400.webp"
+        alt="tech"
+        loading="lazy"
+      />
     </picture>
     <picture>
-        <img src="images/placeholder300x400.png" data-src="https://placeimg.com/300/400/any" alt="any"/>
+      <img
+        src="images/placeholder300x400.png"
+        data-src="images/any300x400.webp"
+        alt="any"
+        loading="lazy"
+      />
     </picture>
-    
-</body>
+  </body>
 </html>
