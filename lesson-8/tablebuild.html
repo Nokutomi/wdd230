@@ -6,30 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/minimal-table.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div id="table">
-      <thead>
-        <tr>
-          <th scope="colgroup" colspan="3">ACME Wildwest</th>
-        </tr>
-        <tr>
-          <th scope="col" id="period">Period</th>
-          <th scope="col" id="sales">Sales</th>
-          <th scope="col" id="goal">Sales Goal</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td scope="col" headers="period">Period</td>
-          <td scope="col" headers="sales">Sales</td>
-          <td scope="col" headers="goal">Sales Goal</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        Compiled 06.07.2022 by NKutomi
-      </tfoot>
+      <table>
+        <thead>
+          <tr>
+            <th scope="colgroup" colspan="3">ACME Wildwest</th>
+          </tr>
+          <tr>
+            <th scope="col" id="period">Period</th>
+            <th scope="col" id="sales">Sales</th>
+            <th scope="col" id="goal">Sales Goal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="period">August</td>
+            <td headers="sales">$3,590</td>
+            <td headers="goal">$4,000</td>
+          </tr>
+          <tr>
+            <td headers="period">September</td>
+            <td headers="sales">$4,420</td>
+            <td headers="goal">$5,000</td>
+          </tr>
+          <tr>
+            <td headers="period">October</td>
+            <td headers="sales">$4,870</td>
+            <td headers="goal">$5,000</td>
+          </tr>
+          <tr>
+            <td headers="period">November</td>
+            <td headers="sales">$8,610</td>
+            <td headers="goal" id="highlight">$7,500</td>
+          </tr>
+          <tr>
+            <td headers="period"><em>Black Friday</em></td>
+            <td colspan="2" headers="sales goal">$3,200</td>
+          </tr>
+          <tr>
+            <td headers="period">December</td>
+            <td headers="sales">$6,820</td>
+            <td headers="goal">$7,500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td id="tfoot" colspan="3">Compiled 06.07.2022 by NKutomi</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
   </body>
 </html>
