@@ -68,12 +68,19 @@
     grid-column: 1 / -1;
   }
 
+  .main-join-form {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
   .main-discover-images {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
   }
 
-  .norm:hover {box-shadow: 0 0 50px #333;}
+  .norm:hover {
+    box-shadow: 0 0 50px #333;
+  }
 
   footer {
     display: grid;
@@ -111,4 +118,10 @@
   .main-join {
     display: block;
   }
+
+  .benefits {
+    display: inline;
+    color: #999;
+  }
+
 }
