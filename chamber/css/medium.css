@@ -78,6 +78,11 @@
     grid-row: 3 / 4;
   }
 
+  .main-directory {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
   .norm:hover {
     box-shadow: 0 0 50px #333;
   }
@@ -122,6 +127,10 @@
   .benefits {
     display: inline;
     color: #999;
+  }
+
+  .list section p {
+    display: block; /* smaller viewports only */
   }
 
 }

@@ -18,8 +18,9 @@
       content="The Paulistano Chamber of Commerce online portal. Make businesess, contacts, and find services online."
     />
     <script src="./js/index.js" defer></script>
-    <script src="./js/windchill.js" defer></script>
-    <script src="./js/current-date.js" defer></script>
+    <script src="./js/gridlist.js" defer></script>
+    <!-- <script src="./store/data.json "></script> -->
+    <script src="./js/directory.js" defer></script>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/medium.css" />
@@ -51,8 +52,8 @@
         <ul id="primaryNav">
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li class="active"><a href="join.html">Join</a></li>
-          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li class="active"><a href="directory.html">Directory</a></li>
           <li>
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
           </li>
@@ -63,11 +64,21 @@
       </nav>
     </header>
     <main>
-      <h1>Join</h1>
-      <section class="main-join-form">
-        <h2>Join our chamber</h2>
-        <p>Thank you for joining Paulistano Chamber of Commerce.</p>
-      </section>
+      <h1>Directory</h1>
+       <section class="main-directory">
+        <h2>Businesses</h2>
+        <div class="directory-buttons">
+          <button id="grid">Grid</button>
+          <button id="list">List</button>
+        </div>
+        <article class="grid directory">
+          <!-- <section>
+            <img src="https://placeimg.com/640/480/tech" alt="Haag-Cassin" loading="lazy">
+            <p>Sao Paulo</p>
+            <p>(11) 96589-5478</p>
+            <a href="https://www.haag-cassin.com" target="_blank">https://www.haag-cassin.com</a>
+          </section> -->
+        </article>
     </main>
     <footer class="card">
       <figure class="footer-figure">
