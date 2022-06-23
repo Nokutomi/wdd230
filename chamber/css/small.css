@@ -413,7 +413,7 @@ form label.top input:required:valid {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  align-items: center stretch;
+  align-items: stretch;
   gap: 1rem;
 }
 

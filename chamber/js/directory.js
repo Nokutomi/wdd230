@@ -1,6 +1,5 @@
 let directory = document.querySelector(".directory");
 
-
 function displayBusinesses(item) {
     // Create elements to add to the document
     let image = document.createElement("img");
