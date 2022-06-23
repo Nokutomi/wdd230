@@ -476,3 +476,8 @@ form label.top input:required:valid {
     display: block;
   }
 }
+
+#weather-icon {
+  margin: 0 auto;
+  display: block;
+}

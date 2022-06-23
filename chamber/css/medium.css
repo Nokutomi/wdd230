@@ -91,7 +91,7 @@
     display: grid;
     grid-template-columns: 100px 1fr 250px;
     align-items: center;
-    grid-template-areas: "logo address email" "logo address map" "info info info";
+    grid-template-areas: "logo address email" "logo address map" "info info info" ". . links";
     padding: 1rem 1rem 5rem 0;
   }
 
@@ -120,6 +120,11 @@
     margin-top: 1rem;
   }
 
+  .footer-openweather {
+    grid-area: links;
+    text-align: right;
+  }
+
   .main-join {
     display: block;
   }
@@ -132,5 +137,4 @@
   .list section p {
     display: block; /* smaller viewports only */
   }
-
 }
