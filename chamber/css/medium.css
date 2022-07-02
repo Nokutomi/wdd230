@@ -83,6 +83,16 @@
     grid-column: 1 / -1;
   }
 
+  .main-contact-form {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  .main-contact-info {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
   .norm:hover {
     box-shadow: 0 0 50px #333;
   }
@@ -136,5 +146,15 @@
 
   .list section p {
     display: block; /* smaller viewports only */
+  }
+
+  .main-contact-info h3 {
+    margin-left: 2rem;
+    padding-right: 0.5rem;
+  }
+  
+  .main-contact-info p {
+    padding-right: 0.5rem;
+    margin: 0.5rem 2rem;
   }
 }

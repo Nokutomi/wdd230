@@ -78,5 +78,21 @@
         "website": "https://www.andersongibsonkulas.com",
         "imageurl": "https://placeimg.com/280/210/tech",
         "membership-level": "Silver"
-    }        
+    },
+    {
+        "name": "Empadinha",
+        "address": "Av. Tiradentes, 1400",
+        "phone": "(11) 97326-9844",
+        "website": "https://www.empadinha.com",
+        "imageurl": "https://placeimg.com/300/225/tech",
+        "membership-level": "NP"
+    },
+    {
+        "name": "Padaria do Zé",
+        "address": "Av. Tiradentes, 1300",
+        "phone": "(11) 97326-9833",
+        "website": "https://www.zepadaria.com",
+        "imageurl": "https://placeimg.com/320/240/tech",
+        "membership-level": "Silver"
+    }
 ]

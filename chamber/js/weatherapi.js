@@ -12,7 +12,7 @@ const url =
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data); // this is temporary for development only
+    // console.log(data); // this is temporary for development only
     currentTemp.innerHTML = `<strong>${data.main.temp.toFixed(0)}</strong>`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description;

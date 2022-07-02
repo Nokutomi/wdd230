@@ -18,8 +18,8 @@
       content="The Paulistano Chamber of Commerce online portal. Make businesess, contacts, and find services online."
     />
     <script src="./js/index.js" defer></script>
-    <script src="./js/windchill.js" defer></script>
-    <script src="./js/current-date.js" defer></script>
+    <!-- <script src="./js/windchill.js" defer></script> -->
+    <!-- <script src="./js/current-date.js" defer></script> -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/medium.css" />
@@ -51,9 +51,9 @@
         <ul id="primaryNav">
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li class="active"><a href="join.html">Join</a></li>
+          <li><a href="join.html">Join</a></li>
           <li><a href="directory.html">Directory</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
           <li>
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
           </li>
@@ -64,10 +64,49 @@
       </nav>
     </header>
     <main>
-      <h1>Join</h1>
-      <section class="main-join-form">
-        <h2>Join our chamber</h2>
-        <p>Thank you for joining Paulistano Chamber of Commerce.</p>
+      <h1>Contact Us</h1>
+      <section class="main-contact-form">
+        <h2>Send a message</h2>
+        <form method="get" action="thankyoumessage.html">
+          <fieldset>
+            <legend>Your message</legend>
+            <label class="top"
+              >First name:* <input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Last name: <input type="text" name="lname"
+            /></label>
+            <label class="top"
+              >Email:*
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="something@gmail.com"
+            /></label>
+            <label class="top">Phone: <input type="tel" name="phone" /></label>
+            <label class="top"
+            >Leave here your message to us:
+            <textarea
+              name="contact-message"
+              rows="5"
+              cols="50"
+              
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Send Message" class="submitBtn" /> 
+        </form>
+      </section>
+      <section class="main-contact-info">
+        <h2>More info</h2>
+        <h3><strong>Paulistano Chamber of Commerce</strong></h3>
+        <p>Av. Faria Lima, 1000</p>
+        <p>Sao Paulo - SP, CEP 01010-100 </p>
+        <p>Phone: (11) 3125-4578</p>
+        <p>Office hours: 8am to 5pm</p>
+        <p>Contact: Susan Silva (susan.silva@paulistano.com)</p>
+
       </section>
     </main>
     <footer class="card">

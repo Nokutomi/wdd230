@@ -42,7 +42,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
+    // console.table(jsonObject); // temporary checking for valid response and data parsing
     const businesses = jsonObject;
     businesses.forEach(displayBusinesses);
   });

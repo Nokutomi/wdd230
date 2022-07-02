@@ -20,6 +20,7 @@
     <script src="./js/index.js" defer></script>
     <script src="./js/weatherapi.js" defer></script>
     <script src="./js/windchill.js" defer></script>
+    <script src="./js/spotlights.js" defer></script>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/medium.css" />
@@ -53,6 +54,7 @@
           <li><a href="discover.html">Discover</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li>
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
           </li>
@@ -104,23 +106,26 @@
             width="1000"
             height="641"
             sizes="(max-width: 400px) 400px, ((min-width: 401px) and (max-width: 650px)) 650px, ((min-width: 651px) and (max-width: 900px)) 900px, 1050px"
-            />
+          />
         </figure>
         <div id="hero-overlay">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-          <button id="hero-overlay-btn">Join today</button>
+          <h2>
+            Come make part of Paulistano chamber of commerce and boost your
+            businesses
+          </h2>
+          <a id="hero-overlay-btn" href="join.html">Join today</a>
         </div>
       </section>
       <section class="main-event">
         <h2>Event</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ornare
-          metus. Fusce auctor dictum dui at aliquam.
-        </p>
+        <p>Festa Junina</p>
+        <p>Place: Av. Tiradentes, 1000.</p>
+        <p>Days: 06/01 to 07/31</p>
+        <p>Hours: 5pm to 11pm</p>
       </section>
       <section class="main-weather">
         <h2>Weather</h2>
-        <img id="weather-icon" src="#" alt="#">
+        <img id="weather-icon" src="#" alt="#" />
         <p>Temperature: <span id="weather-temperature">40</span> ºF</p>
         <p>Condition: <span id="weather-condition">Partly Cloudy</span></p>
         <p>Wind Speed: <span id="weather-wind-speed">5</span> mph</p>
@@ -128,17 +133,11 @@
       </section>
       <section class="main-news-release">
         <h2>News release</h2>
+        <h3>Huge fight after game</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          vehicula pharetra arcu sit amet blandit. Aliquam scelerisque urna at
-          dolor pharetra tristique quis dictum mauris. Proin a dui semper,
-          bibendum odio vel, maximus lorem. Mauris ac vestibulum sem. Morbi eget
-          ligula mattis, dapibus urna ac, laoreet nisi. Donec vitae lectus
-          fermentum elit accumsan congue non mollis nunc. In interdum elementum
-          sagittis. Mauris mollis gravida velit, at iaculis orci tempus ac.
-          Curabitur congue bibendum ipsum, non porta justo dictum sed. Donec ut
-          tempor velit. Praesent eget ligula sit amet felis sodales lacinia.
-          Suspendisse sit amet sem nibh. Proin purus mi, tristique.
+          After the Palmeiras and Botafogo soccer game in Sao Paulo, Palmeiras
+          houese Allianz Parque, many rooters started a fight. At least 20 got
+          injuries. THe local police force is investigating
         </p>
       </section>
       <section class="main-spotlight1">
@@ -160,9 +159,8 @@
       <section class="main-join">
         <h2>Join</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ornare
-          metus. Fusce auctor dictum dui at aliquam. Sed quis quam tincidunt,
-          eleifend felis ut, aliquet nibh. Curabitur quis augue.
+          Come make part of Paulistano chamber of commerce and boost your
+            businesses
         </p>
       </section>
     </main>
@@ -191,11 +189,13 @@
           >Link to Map</a
         >
       </p>
+      <p class="footer-openweather">
+        <a href="https://openweathermap.org/" target="_blank">Open Weather</a>
+      </p>
       <p class="footer-info">
         <span id="copyright"></span> Paulistano Chamber | Nathan Kutomi | WDD
         230 Project | <span id="last-updated">Last Updated:</span>
       </p>
-      <p class="footer-openweather"><a href="https://openweathermap.org/" target="_blank">Open Weather</a></p>
     </footer>
   </body>
 </html>
